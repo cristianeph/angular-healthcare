@@ -2,19 +2,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {ListComponent} from './list/list.component';
-import {MatPaginatorModule, MatSortModule, MatTableModule} from '@angular/material';
+import {SharedModule} from './shared/shared.module';
+import {AppRoutingModule} from './app-routing.module';
+import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent
   ],
   imports: [
     BrowserModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule
+    AppRoutingModule,
+    SharedModule,
+    NoopAnimationsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

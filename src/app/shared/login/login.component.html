@@ -1,0 +1,27 @@
+<section class="login-panel">
+  <div class="login-panel-bg">
+    <img src="./assets/images/bg.jpg" alt="" />
+  </div>
+  <div class="login-panel-form">
+    <div class="company-logo">
+      <img src="./assets/images/logo-grupo.png" alt="" />
+    </div>
+    <form (ngSubmit)="requestLogin()">
+      <mat-form-field>
+        <input matInput
+               type="text"
+               placeholder="usuario"
+               name="usuario"
+               [(ngModel)]="user.user"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput
+               type="password"
+               placeholder="password"
+               name="clave"
+               [(ngModel)]="user.password"/>
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="primary">INGRESAR</button>
+    </form>
+  </div>
+</section>

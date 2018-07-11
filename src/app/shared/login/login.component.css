@@ -1,0 +1,36 @@
+.login-panel-form form > * {
+  width: 100%;
+}
+
+.login-panel form {
+  width: 400px;
+  padding: 1.5rem;
+}
+
+.company-logo {
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+}
+
+.login-panel-form {
+  width: 400px;
+}
+
+.login-panel-bg {
+  width: calc(100% - 400px);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login-panel-bg img {
+  height: 100%;
+}
+
+.login-panel {
+  overflow: hidden;
+  display: flex;
+}
