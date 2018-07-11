@@ -1,2 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.table-container {
+  margin: 1rem;
+}
+
+.table-container table {
+  width: 100%;
+}
+
+form {
+  padding: 1rem;
+}
+
+/* Material Angular Elements */
+
+mat-form-field {
+  width: 100%;
+}

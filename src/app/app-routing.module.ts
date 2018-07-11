@@ -8,13 +8,13 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
-    path: 'care',
-    loadChildren: './care/care.module#CareModule'/*,
+    path: 'history',
+    loadChildren: './history/history.module#HistoryModule'/*,
     canActivate: [AuthguardService]*/
   },
   {
-    path: 'history',
-    loadChildren: './history/history.module#HistoryModule'/*,
+    path: 'care',
+    loadChildren: './care/care.module#CareModule'/*,
     canActivate: [AuthguardService]*/
   },
   {

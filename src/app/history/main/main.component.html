@@ -3,12 +3,13 @@
     #drawer
     class="sidenav"
     fixedInViewport="true"
-    [mode]="'side'"
-    [opened]="true">
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)">
     <app-menu></app-menu>
   </mat-sidenav>
   <mat-sidenav-content>
     <app-header></app-header>
-    <router-outlet name="dm"></router-outlet>
+    <router-outlet name="hm"></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -24,8 +24,9 @@ export class LoginComponent implements OnInit {
   }
 
   requestLogin() {
-    /*this.router.navigate(['/dashboard/main', {outlets: {mainadmin: 'users'}}]);*/
-    this.router.navigate(['/dashboard/main']);
+    /*this.router.navigate(['/dashboard/main', {outlets: {dm: 'list'}}]);*/
+    this.router.navigate(['/history/main', {outlets: {hm: 'list'}}]);
+    /*this.router.navigate(['/dashboard/main']);*/
   }
 
 }
