@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
+.card-container {
+  /*margin: 1rem;*/
+}
+
 .table-container {
   margin: 1rem;
 }
@@ -9,12 +13,110 @@
   width: 100%;
 }
 
+.group {
+  display: flex;
+}
+
+.group.single {
+  display: grid;
+  grid-template: "firstform";
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.group.single .form {
+  grid-area: firstform;
+
+}
+
+.group.dual {
+  display: grid;
+  grid-template: "firstform secondform";
+  /*grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);*/
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+  width: calc(100% - 2rem);
+}
+
+.group.dual .form:nth-child(1) {
+  grid-area: firstform;
+}
+
+.group.dual .form:nth-child(2) {
+  grid-area: secondform;
+}
+
+.field {
+  display: flex;
+}
+
+.field.single {
+  display: grid;
+  grid-template: "firstfield";
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.field.dual {
+  display: grid;
+  grid-template: "firstfield secondfield";
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.field.dual.left {
+  display: grid;
+  grid-template: "firstfield firstfield firstfield secondfield";
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.field.triple {
+  display: grid;
+  grid-template: "firstfield secondfield thirdfield";
+  grid-template-columns: auto auto auto;
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.field.single .set {
+  grid-area: firstfield;
+}
+
+.field.dual.left .set:nth-child(1) {
+  grid-area: firstfield;
+}
+
+.field.dual.left .set:nth-child(2) {
+  grid-area: secondfield;
+}
+
+.field.triple .set:nth-child(1) {
+  grid-area: firstfield;
+}
+
+.field.triple .set:nth-child(2) {
+  grid-area: secondfield;
+}
+
+.field.triple .set:nth-child(3) {
+  grid-area: thirdfield;
+}
+
 form {
-  padding: 1rem;
+  /*padding: 1rem;*/
 }
 
 /* Material Angular Elements */
 
-mat-form-field {
-  width: 100%;
+/*mat-form-field {
+}*/
+
+.mat-card-header-text {
+  margin: 0 !important;
 }

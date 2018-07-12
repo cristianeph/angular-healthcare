@@ -19,6 +19,7 @@ export class FormComponent implements OnInit {
     this.route.params.subscribe(
       (params) => {
         this.id = +params['id'];
+        console.log(this.id);
         if (this.id > 0) {
           this.getObject();
         } else {

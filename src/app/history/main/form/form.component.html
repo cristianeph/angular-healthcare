@@ -1,11 +1,78 @@
-<form (ngSubmit)="onSubmit()">
-  <mat-form-field>
-    <input matInput placeholder="Nombres">
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput placeholder="Apellidos">
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput placeholder="DNI">
-  </mat-form-field>
-</form>
+<section class="group dual">
+
+  <form class="form" (ngSubmit)="onSubmit()">
+    <mat-card class="card-container">
+      <mat-card-header>
+        <mat-card-title>Historia</mat-card-title>
+        <mat-card-subtitle>Datos del paciente</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <!--Inicio - Datos de seguridad-->
+        <div class="field single">
+          <mat-form-field class="set">
+            <input matInput placeholder="Seguimiento">
+          </mat-form-field>
+        </div>
+        <div class="field single">
+          <mat-radio-group class="set">
+            <mat-radio-button value="1">Si es apto(a) para trabajar</mat-radio-button>
+            <mat-radio-button value="2">No es apto(a) para trabajar</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <!--Fin -Datos de seguridad-->
+        <!--Inicio - Datos personales-->
+        <div class="field dual left">
+          <mat-form-field class="set">
+            <input matInput placeholder="Apellidos y Nombres">
+          </mat-form-field>
+          <mat-form-field class="set">
+            <input matInput placeholder="Código">
+          </mat-form-field>
+        </div>
+        <div class="field triple">
+          <mat-form-field class="set">
+            <input matInput placeholder="DNI">
+          </mat-form-field>
+          <mat-form-field class="set">
+            <input matInput placeholder="Religión">
+          </mat-form-field>
+          <mat-form-field class="set">
+            <input matInput type="date" placeholder="Fecha Nacimiento">
+          </mat-form-field>
+        </div>
+        <div class="field dual">
+          <mat-form-field class="set">
+            <input matInput placeholder="Contacto de emergencia (Nombres)">
+          </mat-form-field>
+          <mat-form-field class="set">
+            <input matInput placeholder="Contacto de emergencia (Teléfonos)">
+          </mat-form-field>
+        </div>
+        <div class="field triple">
+          <mat-form-field class="set">
+            <input matInput placeholder="Empresa">
+          </mat-form-field>
+          <mat-form-field class="set">
+            <input matInput placeholder="Cargo">
+          </mat-form-field>
+          <mat-form-field class="set">
+            <input matInput placeholder="Area">
+          </mat-form-field>
+        </div>
+        <!--Fin - Datos personales-->
+      </mat-card-content>
+    </mat-card>
+  </form>
+  <form class="form" (ngSubmit)="onSubmit()">
+    <mat-card class="card-container form">
+      <mat-card-header>
+        <mat-card-title>Atenciones</mat-card-title>
+        <mat-card-subtitle>Ficha de atencíon médica</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        test
+      </mat-card-content>
+    </mat-card>
+  </form>
+
+</section>

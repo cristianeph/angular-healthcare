@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HistoryRoutingModule } from './history-routing.module';
 import {FormComponent} from './main/form/form.component';
 import {
-  MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, MatPaginatorModule, MatSidenavModule,
+  MatButtonModule, MatCardModule, MatFormFieldModule, MatIconModule, MatInputModule, MatPaginatorModule, MatRadioModule,
+  MatSidenavModule,
   MatSortModule,
   MatTableModule,
   MatToolbarModule
@@ -29,6 +30,8 @@ import {SharedModule} from '../shared/shared.module';
     MatSortModule,
     MatFormFieldModule,
     MatInputModule,
+    MatRadioModule,
+    MatCardModule
   ],
   declarations: [
     MainComponent,
