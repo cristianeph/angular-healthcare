@@ -1,19 +1,21 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { HistoryRoutingModule } from './history-routing.module';
-import {FormComponent} from './main/form/form.component';
+import {HistoryRoutingModule} from './history-routing.module';
 import {
-  MatButtonModule, MatCardModule, MatFormFieldModule, MatIconModule, MatInputModule, MatPaginatorModule, MatRadioModule,
+  MatButtonModule, MatCardModule, MatDividerModule, MatFormFieldModule, MatIconModule, MatInputModule,
+  MatPaginatorModule, MatRadioModule,
   MatSidenavModule,
   MatSortModule,
   MatTableModule,
   MatToolbarModule
 } from '@angular/material';
-import {ListComponent} from './main/list/list.component';
 import {MainComponent} from './main/main.component';
 import {LayoutModule} from '@angular/cdk/layout';
 import {SharedModule} from '../shared/shared.module';
+import {HistoryListComponent} from './main/history-list/history-list.component';
+import {HistoryFormComponent} from './main/history-form/history-form.component';
+import {CareModule} from '../care/care.module';
 
 @NgModule({
   imports: [
@@ -31,12 +33,15 @@ import {SharedModule} from '../shared/shared.module';
     MatFormFieldModule,
     MatInputModule,
     MatRadioModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule,
+    CareModule
   ],
   declarations: [
     MainComponent,
-    ListComponent,
-    FormComponent
+    HistoryListComponent,
+    HistoryFormComponent,
   ]
 })
-export class HistoryModule { }
+export class HistoryModule {
+}

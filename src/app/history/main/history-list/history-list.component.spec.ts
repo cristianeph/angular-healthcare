@@ -1,19 +1,19 @@
 
 import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListComponent } from './list.component';
+import { HistoryListComponent } from './history-list.component';
 
-describe('ListComponent', () => {
-  let component: ListComponent;
-  let fixture: ComponentFixture<ListComponent>;
+describe('HistoryListComponent', () => {
+  let component: HistoryListComponent;
+  let fixture: ComponentFixture<HistoryListComponent>;
 
   beforeEach(fakeAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListComponent ]
+      declarations: [ HistoryListComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ListComponent);
+    fixture = TestBed.createComponent(HistoryListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

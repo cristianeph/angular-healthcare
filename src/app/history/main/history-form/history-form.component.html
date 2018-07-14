@@ -7,19 +7,6 @@
         <mat-card-subtitle>Datos del paciente</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        <!--Inicio - Datos de seguridad-->
-        <div class="field single">
-          <mat-form-field class="set">
-            <input matInput placeholder="Seguimiento">
-          </mat-form-field>
-        </div>
-        <div class="field single">
-          <mat-radio-group class="set">
-            <mat-radio-button value="1">Si es apto(a) para trabajar</mat-radio-button>
-            <mat-radio-button value="2">No es apto(a) para trabajar</mat-radio-button>
-          </mat-radio-group>
-        </div>
-        <!--Fin -Datos de seguridad-->
         <!--Inicio - Datos personales-->
         <div class="field dual left">
           <mat-form-field class="set">
@@ -62,17 +49,38 @@
         <!--Fin - Datos personales-->
       </mat-card-content>
     </mat-card>
+    <!--<mat-divider></mat-divider>-->
+    <br/>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Seguridad y Salud</mat-card-title>
+        <mat-card-subtitle>Seguimiento del paciente</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <!--Inicio - Datos de seguridad-->
+        <div class="field single">
+          <mat-form-field class="set">
+            <input matInput placeholder="Seguimiento">
+          </mat-form-field>
+        </div>
+        <div class="field single">
+          <mat-radio-group class="set">
+            <mat-radio-button value="1">Si es apto(a) para trabajar</mat-radio-button>
+            <mat-radio-button value="2">No es apto(a) para trabajar</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <!--Fin -Datos de seguridad-->
+      </mat-card-content>
+    </mat-card>
   </form>
   <form class="form" (ngSubmit)="onSubmit()">
-    <mat-card class="card-container form">
+    <!--<mat-card class="card-container form">
       <mat-card-header>
         <mat-card-title>Atenciones</mat-card-title>
         <mat-card-subtitle>Ficha de atencíon médica</mat-card-subtitle>
       </mat-card-header>
-      <mat-card-content>
-        test
-      </mat-card-content>
-    </mat-card>
+    </mat-card>-->
+    <router-outlet name="cares"></router-outlet>
   </form>
 
 </section>

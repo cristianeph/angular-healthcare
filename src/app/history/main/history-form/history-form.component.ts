@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
-  selector: 'app-form',
-  templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  selector: 'app-history-form',
+  templateUrl: './history-form.component.html',
+  styleUrls: ['./history-form.component.css']
 })
-export class FormComponent implements OnInit {
+export class HistoryFormComponent implements OnInit {
   id: number;
 
   constructor(private route: ActivatedRoute) { }
@@ -35,4 +35,5 @@ export class FormComponent implements OnInit {
   private onSubmit() {
     console.log('Submitting form');
   }
+
 }
